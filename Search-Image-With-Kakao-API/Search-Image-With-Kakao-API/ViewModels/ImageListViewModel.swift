@@ -20,3 +20,9 @@ extension ImageListViewModel {
     func searchImage() {
     }
 }
+
+extension ImageListViewModel {
+    func numberOfItems() -> Int {
+        return 10
+    }
+}

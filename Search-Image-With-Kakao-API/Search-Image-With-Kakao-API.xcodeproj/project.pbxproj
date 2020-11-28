@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		1B805E55DF84BF824C51CAC3 /* Pods_Search_Image_With_Kakao_APITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891390B810776C4EAF5247F /* Pods_Search_Image_With_Kakao_APITests.framework */; };
 		40CFE01D2572D7BA008BD27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE01C2572D7BA008BD27C /* AppDelegate.swift */; };
-		40CFE0212572D7BA008BD27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0202572D7BA008BD27C /* ViewController.swift */; };
+		40CFE0212572D7BA008BD27C /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0202572D7BA008BD27C /* ImageListViewController.swift */; };
 		40CFE0242572D7BA008BD27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CFE0222572D7BA008BD27C /* Main.storyboard */; };
 		40CFE0262572D7BD008BD27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CFE0252572D7BD008BD27C /* Assets.xcassets */; };
 		40CFE0292572D7BD008BD27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CFE0272572D7BD008BD27C /* LaunchScreen.storyboard */; };
+		40CFE0402572D8CA008BD27C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE03F2572D8CA008BD27C /* AppCoordinator.swift */; };
+		40CFE0422572D95D008BD27C /* ImageListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0412572D95D008BD27C /* ImageListCoordinator.swift */; };
+		40CFE0452572D9BF008BD27C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0442572D9BF008BD27C /* UIViewController+Extensions.swift */; };
+		40CFE0492572DBB5008BD27C /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0482572DBB5008BD27C /* ImageListViewModel.swift */; };
 		D6CB12D7DF22C6C36F02ED2C /* Pods_Search_Image_With_Kakao_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE4A65196369520D8BD664B /* Pods_Search_Image_With_Kakao_API.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,13 +34,17 @@
 		2C0E45EE9D44692E360A58E9 /* Pods-Search-Image-With-Kakao-APITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Image-With-Kakao-APITests.debug.xcconfig"; path = "Target Support Files/Pods-Search-Image-With-Kakao-APITests/Pods-Search-Image-With-Kakao-APITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40CFE0192572D7BA008BD27C /* Search-Image-With-Kakao-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search-Image-With-Kakao-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CFE01C2572D7BA008BD27C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40CFE0202572D7BA008BD27C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40CFE0202572D7BA008BD27C /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		40CFE0232572D7BA008BD27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40CFE0252572D7BD008BD27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CFE0282572D7BD008BD27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40CFE02A2572D7BD008BD27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40CFE02F2572D7BD008BD27C /* Search-Image-With-Kakao-APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search-Image-With-Kakao-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CFE0352572D7BD008BD27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40CFE03F2572D8CA008BD27C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		40CFE0412572D95D008BD27C /* ImageListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCoordinator.swift; sourceTree = "<group>"; };
+		40CFE0442572D9BF008BD27C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		40CFE0482572DBB5008BD27C /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
 		9EE4A65196369520D8BD664B /* Pods_Search_Image_With_Kakao_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_Image_With_Kakao_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86D35CC7D88E0D146FD6209 /* Pods-Search-Image-With-Kakao-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Image-With-Kakao-API.release.xcconfig"; path = "Target Support Files/Pods-Search-Image-With-Kakao-API/Pods-Search-Image-With-Kakao-API.release.xcconfig"; sourceTree = "<group>"; };
 		BD9B61AF50D3127C03EFB1E3 /* Pods-Search-Image-With-Kakao-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Image-With-Kakao-APITests.release.xcconfig"; path = "Target Support Files/Pods-Search-Image-With-Kakao-APITests/Pods-Search-Image-With-Kakao-APITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,8 +95,11 @@
 		40CFE01B2572D7BA008BD27C /* Search-Image-With-Kakao-API */ = {
 			isa = PBXGroup;
 			children = (
+				40CFE0472572DBA6008BD27C /* ViewModels */,
+				40CFE0462572D9DF008BD27C /* Controllers */,
+				40CFE0432572D9B0008BD27C /* Extensions */,
+				40CFE03E2572D8B3008BD27C /* Coordinators */,
 				40CFE01C2572D7BA008BD27C /* AppDelegate.swift */,
-				40CFE0202572D7BA008BD27C /* ViewController.swift */,
 				40CFE0222572D7BA008BD27C /* Main.storyboard */,
 				40CFE0252572D7BD008BD27C /* Assets.xcassets */,
 				40CFE0272572D7BD008BD27C /* LaunchScreen.storyboard */,
@@ -103,6 +114,39 @@
 				40CFE0352572D7BD008BD27C /* Info.plist */,
 			);
 			path = "Search-Image-With-Kakao-APITests";
+			sourceTree = "<group>";
+		};
+		40CFE03E2572D8B3008BD27C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				40CFE03F2572D8CA008BD27C /* AppCoordinator.swift */,
+				40CFE0412572D95D008BD27C /* ImageListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		40CFE0432572D9B0008BD27C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40CFE0442572D9BF008BD27C /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40CFE0462572D9DF008BD27C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40CFE0202572D7BA008BD27C /* ImageListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		40CFE0472572DBA6008BD27C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				40CFE0482572DBB5008BD27C /* ImageListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5FB0F7F81BCF9150FA64B780 /* Pods */ = {
@@ -293,7 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CFE0212572D7BA008BD27C /* ViewController.swift in Sources */,
+				40CFE0492572DBB5008BD27C /* ImageListViewModel.swift in Sources */,
+				40CFE0422572D95D008BD27C /* ImageListCoordinator.swift in Sources */,
+				40CFE0402572D8CA008BD27C /* AppCoordinator.swift in Sources */,
+				40CFE0452572D9BF008BD27C /* UIViewController+Extensions.swift in Sources */,
+				40CFE0212572D7BA008BD27C /* ImageListViewController.swift in Sources */,
 				40CFE01D2572D7BA008BD27C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

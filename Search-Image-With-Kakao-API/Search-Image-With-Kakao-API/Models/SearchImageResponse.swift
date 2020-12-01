@@ -14,7 +14,7 @@ struct SearchImageResponse: Decodable {
 }
 
 struct SearchImageResponseMeta: Decodable {
-    let isEnd: Bool
+    var isEnd: Bool
     let totalCount: Int
     let pageableCount: Int
 }

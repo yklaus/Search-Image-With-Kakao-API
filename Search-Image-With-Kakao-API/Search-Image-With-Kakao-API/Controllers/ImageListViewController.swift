@@ -11,6 +11,7 @@ import UIKit
 class ImageListViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     let cellId = "ImageCell"
@@ -24,6 +25,7 @@ class ImageListViewController: UIViewController {
         
         viewModel.onUpdate = { [weak self] in
             self?.collectionView.reloadData()
+            self?.changeState()
         }
     }
     
@@ -38,6 +40,22 @@ extension ImageListViewController {
         searchBar.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+    private func changeState() {
+        switch viewModel.state {
+        case .error:
+            self.collectionView.isHidden = true
+            self.errorLabel.isHidden = false
+            self.errorLabel.text = "에러메시지 - 잠시 후 다시 시도하시기 바랍니다."
+        case .resultNone:
+            self.collectionView.isHidden = true
+            self.errorLabel.isHidden = false
+            self.errorLabel.text = "검색결과가 없습니다."
+        default:
+            self.collectionView.isHidden = false
+            self.errorLabel.isHidden = true
+        }
     }
 }
 
@@ -68,7 +86,9 @@ extension ImageListViewController: UICollectionViewDataSource {
         }
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        viewModel.loadMore(indexPath)
+    }
 }
 
 extension ImageListViewController: UICollectionViewDelegateFlowLayout {

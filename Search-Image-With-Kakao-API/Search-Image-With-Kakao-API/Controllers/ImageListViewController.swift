@@ -21,6 +21,11 @@ class ImageListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        
+        viewModel.onUpdate = { [weak self] in
+            self?.collectionView.reloadData()
+        }
+        viewModel.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,9 +61,12 @@ extension ImageListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.backgroundColor = .red
-        return cell
+        switch viewModel.cell(at: indexPath) {
+        case .image(let imageListCellViewModel):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ImageListCell
+            cell.update(with: imageListCellViewModel)
+            return cell
+        }
     }
     
     

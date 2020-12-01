@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ImageListCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    
+    func update(with viewModel: ImageListCellViewModel) {
+        self.imageView.kf.setImage(with: URL(string: viewModel.thumbnailUrl)!)
+    }
 }

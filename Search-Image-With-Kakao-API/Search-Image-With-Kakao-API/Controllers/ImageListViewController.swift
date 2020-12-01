@@ -25,7 +25,6 @@ class ImageListViewController: UIViewController {
         viewModel.onUpdate = { [weak self] in
             self?.collectionView.reloadData()
         }
-        viewModel.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {

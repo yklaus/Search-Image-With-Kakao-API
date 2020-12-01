@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Moya
 
 final class ImageListCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
@@ -18,7 +19,7 @@ final class ImageListCoordinator: Coordinator {
     
     func start() {
         let imageListViewController: ImageListViewController = .instantiate()
-        let imageListViewModel = ImageListViewModel()
+        let imageListViewModel = ImageListViewModel(MoyaProvider<DaumImageSearchApi>())
         imageListViewController.viewModel = imageListViewModel
         navigationController.setViewControllers([imageListViewController], animated: false)
     }

@@ -13,7 +13,15 @@ struct ImageListCellViewModel {
         return searchImageResponseDocument.thumbnailUrl
     }
     
+    var onSelect: (SearchImageResponseDocument) -> Void = { _ in }
+    
     init(_ searchImageResponseDocument: SearchImageResponseDocument) {
         self.searchImageResponseDocument = searchImageResponseDocument
+    }
+}
+
+extension ImageListCellViewModel {
+    func didSelect() {
+        onSelect(searchImageResponseDocument)
     }
 }

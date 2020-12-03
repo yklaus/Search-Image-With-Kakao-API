@@ -91,5 +91,20 @@
             </objects>
             <point key="canvasLocation" x="139" y="136"/>
         </scene>
+        <!--Full Screen Image View Controller-->
+        <scene sceneID="U3p-Fb-ney">
+            <objects>
+                <viewController storyboardIdentifier="FullScreenImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1uU-uJ-rQ4" customClass="FullScreenImageViewController" customModule="Search_Image_With_Kakao_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kzj-ce-KfS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nXj-uO-aEM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3W-Ph-arn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988.40579710144937" y="135.9375"/>
+        </scene>
     </scenes>
 </document>

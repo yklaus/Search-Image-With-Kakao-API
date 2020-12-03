@@ -7,6 +7,7 @@ target 'Search-Image-With-Kakao-API' do
 
   # Pods for Search-Image-With-Kakao-API
   pod 'Moya', '~> 14.0'
+  pod 'SnapKit', '~> 5.0.0'
   pod 'Kingfisher', '~> 5.0'
 
   target 'Search-Image-With-Kakao-APITests' do

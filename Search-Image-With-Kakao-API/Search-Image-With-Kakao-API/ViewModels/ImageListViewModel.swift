@@ -25,6 +25,7 @@ final class ImageListViewModel {
     
     var page = 1
     var onUpdate = {}
+    weak var coordinator: ImageListCoordinator?
     var searchImageResponseMeta: SearchImageResponseMeta?
     
     enum Cell {
@@ -73,7 +74,10 @@ extension ImageListViewModel {
                         self.searchImageResponseMeta = decoded.meta
                         if let documents = decoded.documents {
                             self.cells += documents.map {
-                                let cellViewModel = ImageListCellViewModel($0)
+                                var cellViewModel = ImageListCellViewModel($0)
+                                if let coordinator = self.coordinator {
+                                    cellViewModel.onSelect = coordinator.onSelect
+                                }
                                 return .image(cellViewModel)
                             }
                         }
@@ -112,5 +116,12 @@ extension ImageListViewModel {
     
     func cell(at indexPath: IndexPath) -> Cell {
         return cells[indexPath.item]
+    }
+    
+    func didSelectItem(at indexPath: IndexPath) {
+        switch cells[indexPath.item] {
+        case .image(let imageListCellViewModel):
+            imageListCellViewModel.didSelect()
+        }
     }
 }

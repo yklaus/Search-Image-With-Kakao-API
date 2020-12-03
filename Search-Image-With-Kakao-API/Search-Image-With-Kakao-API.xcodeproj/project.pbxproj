@@ -21,6 +21,9 @@
 		40CFE05125769F92008BD27C /* ImageListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE05025769F92008BD27C /* ImageListCellViewModel.swift */; };
 		40CFE0542576A037008BD27C /* SearchImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0532576A037008BD27C /* SearchImageResponse.swift */; };
 		40CFE0572576A820008BD27C /* DaumImageSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0562576A820008BD27C /* DaumImageSearchApi.swift */; };
+		40CFE0592576E928008BD27C /* FullScreenImageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE0582576E928008BD27C /* FullScreenImageCoordinator.swift */; };
+		40CFE05B2576EB0D008BD27C /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE05A2576EB0D008BD27C /* FullScreenImageViewController.swift */; };
+		40CFE05D2576EC68008BD27C /* FullScreenImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFE05C2576EC68008BD27C /* FullScreenImageViewModel.swift */; };
 		D6CB12D7DF22C6C36F02ED2C /* Pods_Search_Image_With_Kakao_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE4A65196369520D8BD664B /* Pods_Search_Image_With_Kakao_API.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		40CFE05025769F92008BD27C /* ImageListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCellViewModel.swift; sourceTree = "<group>"; };
 		40CFE0532576A037008BD27C /* SearchImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageResponse.swift; sourceTree = "<group>"; };
 		40CFE0562576A820008BD27C /* DaumImageSearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumImageSearchApi.swift; sourceTree = "<group>"; };
+		40CFE0582576E928008BD27C /* FullScreenImageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageCoordinator.swift; sourceTree = "<group>"; };
+		40CFE05A2576EB0D008BD27C /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		40CFE05C2576EC68008BD27C /* FullScreenImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewModel.swift; sourceTree = "<group>"; };
 		9EE4A65196369520D8BD664B /* Pods_Search_Image_With_Kakao_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_Image_With_Kakao_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86D35CC7D88E0D146FD6209 /* Pods-Search-Image-With-Kakao-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Image-With-Kakao-API.release.xcconfig"; path = "Target Support Files/Pods-Search-Image-With-Kakao-API/Pods-Search-Image-With-Kakao-API.release.xcconfig"; sourceTree = "<group>"; };
 		BD9B61AF50D3127C03EFB1E3 /* Pods-Search-Image-With-Kakao-APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search-Image-With-Kakao-APITests.release.xcconfig"; path = "Target Support Files/Pods-Search-Image-With-Kakao-APITests/Pods-Search-Image-With-Kakao-APITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 			children = (
 				40CFE03F2572D8CA008BD27C /* AppCoordinator.swift */,
 				40CFE0412572D95D008BD27C /* ImageListCoordinator.swift */,
+				40CFE0582576E928008BD27C /* FullScreenImageCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				40CFE0202572D7BA008BD27C /* ImageListViewController.swift */,
+				40CFE05A2576EB0D008BD27C /* FullScreenImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			children = (
 				40CFE0482572DBB5008BD27C /* ImageListViewModel.swift */,
 				40CFE05025769F92008BD27C /* ImageListCellViewModel.swift */,
+				40CFE05C2576EC68008BD27C /* FullScreenImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -379,10 +388,13 @@
 				40CFE0422572D95D008BD27C /* ImageListCoordinator.swift in Sources */,
 				40CFE0402572D8CA008BD27C /* AppCoordinator.swift in Sources */,
 				40CFE0452572D9BF008BD27C /* UIViewController+Extensions.swift in Sources */,
+				40CFE0592576E928008BD27C /* FullScreenImageCoordinator.swift in Sources */,
 				40CFE0542576A037008BD27C /* SearchImageResponse.swift in Sources */,
 				40CFE0212572D7BA008BD27C /* ImageListViewController.swift in Sources */,
 				40CFE01D2572D7BA008BD27C /* AppDelegate.swift in Sources */,
 				40CFE0572576A820008BD27C /* DaumImageSearchApi.swift in Sources */,
+				40CFE05D2576EC68008BD27C /* FullScreenImageViewModel.swift in Sources */,
+				40CFE05B2576EB0D008BD27C /* FullScreenImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
